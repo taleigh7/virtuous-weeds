@@ -1,0 +1,79 @@
+
+/* ===== dropdown.css ============================================= */
+
+/* .dropdown -- dropdown wrapper  */
+/*  .dropbtn -- top button of dropdown menu */
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+  background: #befafa;
+}
+
+/* Links inside the dropdown */
+li .dropdown-content a {
+  display: block;
+  text-align: left;
+  font-size: .73rem;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #20B2AA;
+}
+
+.dropdown-spacer:first-child {
+  background-image: linear-gradient(#befafa, #800096, #FFE599);
+  height: 15px;
+  margin-top: 5px;
+}
+
+.dropdown-spacer:last-child {
+  background-image: linear-gradient(#FFE599, #800096, #befafa);
+  height: 15px;
+}
+
+.universe li .dropdown-content a:first-child {
+  margin-top: 15px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ================================================================ */
+@media (min-width: 550px) {
+
+  .dropdown-content {
+    background: none;
+  }
+
+  li .dropdown-content a {
+    font-size: .8rem;
+  } 
+
+  .dropdown:hover .dropdown-content {
+    left: auto;
+  }
+
+} /* /.media 550px */
+
+
+/* ================================================================== */
+@media (min-width: 750px) {
+
+    .universe li .dropdown-content a:first-child {
+    margin-top: 30px;
+  }
+
+  .universe li .dropdown-content a:last-child {
+    height: 30px;
+  }
+
+} /* /.media 750px */
+
+

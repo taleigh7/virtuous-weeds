@@ -1,0 +1,955 @@
+/*--======================================================
+----- VIRTUOUS WEEDS -----
+    Style.css stylesheet
+==========================================================*/
+
+
+/* =========================================================
+  Global Styles
+========================================================= */
+@font-face {
+  font-family: srisakdi;
+  src: url(../fonts/srisakdi/srisakdi-regular.ttf);
+}
+
+@font-face {
+  font-family: srisakdi;
+  src: url(../fonts/srisakdi/srisakdi-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-400-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-400-RegularItalic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-500-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-500-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-600-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-600-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic; 
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-700-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Mali;
+  src: url(../fonts/Mali/Mali-700-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-300-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-400-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  src: url(../fonts/Comfortaa/Comfortaa-700-Bold.ttf);
+  font-weight: 700;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+/* =======================================================
+  MOBILE/Base Styles
+========================================================== */
+
+.test {
+color: #20B2AA
+}
+
+.dropdown-content,
+.main-nav {
+  transform: translateZ(20rem);
+}
+
+/* ===== MOBILE/Base  GENERAL BODY ====================== */
+
+body{
+  font-family: 'Mali';
+}
+
+.sunshine body {
+  background-color: #FFE599;
+  color: teal;
+  font-weight: 500;
+}
+
+.universe body{
+  background-image: linear-gradient(rgba(0, 0, 32, 0.3) ,rgba(0, 0, 32, .3)), url('../images/hubble-stock.jpg');
+  /* background-image: url('../images/hubble-stock.jpg'); */
+  background-size: cover;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 400;
+}
+
+
+
+/* ===== MOBILE/Base HEADER  ====================== */
+
+/* .under-construction h1 {
+  padding: 20px 20px;
+  margin: 20px 20px;
+} */
+
+.main-header {
+  width: 100%;
+  /* transform: translateZ(8rem); */
+}
+
+.sunshine .main-header {
+  background-color: #ffe599;
+  border-top: 3px solid #800096; 
+}
+
+.universe .main-header {
+  background-image: url(../images/hubble-stock.jpg);
+  background-size: cover;
+
+/* Include the next 2 lines and change .universe body to background-position: top left; 
+    to make the head and body backgrounds act as if one when resizing the window */
+
+/* I like the effect of leaving the followin 2 lines off -- 
+    universes expanding away from one another or collapsing toward one another as you resize the screen. */
+
+  /* background-attachment: fixed;
+  background-position: left top; */
+
+  background-repeat: no-repeat;
+  /* border-top: 4px solid rgb(0, 0, 59);
+  border-bottom: 4px solid rgb(0, 0, 59); */
+}
+
+.universe .main-header .breathe {
+  display: none;
+}
+
+.site-name {
+  font-family: 'srisakdi'; 
+  text-align: center;
+  margin: 5px 0px 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sunshine .site-name {
+  color: #800096;
+}
+
+.byline {
+  text-align: center;
+  margin: 5px;
+  padding-bottom: 5px;
+  font-family: 'Mali';
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sunshine .byline {
+  color: #C902AC;
+}
+
+.universe .main-header .site-name,
+.universe .main-header .byline {
+/* TOP CONTENDER 1 */
+  color: #ffe599;
+  text-shadow: 2px 2px 0 #C902AC, 0px 0px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  /* ------------------------- */
+
+/* TOP CONTENDER 2 */
+  /* color: #befafa;
+  text-shadow: 2px 2px 0 #008080, 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  /* ------------------------- */
+
+ /* TEXT COLOR CHOICES */
+
+  /* color: #800096; */
+  /* color: #ffe599; */
+  /* color: #C902AC; */
+  /* color: #befafa; */
+  /* color: #008080; */
+
+          /* Universe Footer Colors -----------------:   
+            
+                border-top: 4px solid #008080;   
+                border-right: 4px solid #befafa;
+                border-bottom: 4px solid #befafa;
+                border-left: 4px solid #008080;   */
+          
+          /* ---------------------------------- */
+
+   /* TEXT SHADOW CHOICES */       
+
+  /* text-shadow: 1px 1px 0 #befafa; */
+  /* text-shadow: 1px 1px 0 #008080, 0px 0px 2px black, 0 0 25px blue, 0 0 5px darkblue; */   
+  /* text-shadow: 1px 1px 0 #FFE599, 0px 0px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  /* text-shadow: 2px 2px 0 #008080, 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  /* text-shadow: 1px 1px 0 #befafa, 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  /* text-shadow: 2px 2px 0 #C902AC, 0px 0px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  /* text-shadow: 2px 2px 0 #800096, 0px 0px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+
+  /* font-weight: normal;
+  font-weight: 400; */
+}
+
+
+/* ===== MOBILE/Base MAIN CONTENT ====================== */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.indent {
+  width: 92%;
+  margin: 0 auto;
+}
+
+
+.indent img {
+  /* display: block; */
+  /* width: 100%;
+  height: auto; */
+  margin: 1% 3px;
+  /* background: #befafa; */
+  padding: 1px;
+  border: 4px solid #800096
+}
+
+.inset {
+  width: 86%;
+  margin: auto;
+  font-style: italic;
+}
+
+.inset-embellish {
+  font-family: srisakdi;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #800096;
+  border-top: 4px solid #C902AC;
+  border-bottom: 4px solid #800096;
+  border-right: 4px solid #C902AC;
+  border-left: 4px solid #800096;
+  padding: 0px 4px;
+  border-radius: 10%;
+}
+
+em,
+.emphasis {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.universe .content {
+  padding-bottom: 16px;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px 5px black, -1px -1px 5px black,  0 0 25px blue, 0 0 10px darkblue;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  /* text-shadow: -2px 0 #000059, 0 2px #000059, 2px 0 #000059, 0 -2px #000059; */
+}
+
+ol {
+  list-style: disc;
+  width: 80%;
+  margin: 0 auto;
+}
+
+ol li {
+  margin-bottom: .3em;
+}
+
+em {
+  font-weight: bold;
+}
+
+/* ============ MOBILE/Base FOOTER  ==================== */
+
+footer {
+  font-family: Comfortaa, sans-serif;
+  font-size: .9rem;
+  text-align: center;
+  border-bottom: 3px solid #008080;
+}
+
+.sunshine footer {
+  background: #befafa;
+  color: #800096;
+}
+
+.universe footer p {
+  display: inline-block;
+  width: auto;
+  max-width: 98%;
+  padding: 15px;
+  margin: 0px 0 15px;
+  background: rgba(0, 0, 32, .3);
+  border-top: 5px dashed #008080;
+  border-right: 3px solid #80dfdf;
+  border-left:  3px solid #008080;
+  border-bottom:  3px solid #80dfdf;
+  transition: all 2s;
+  cursor: pointer;
+}
+
+.universe footer p:hover {
+  /* transform:  */
+}
+
+/* ===== MOBILE/BASE  3D CARDS, Media-Containers ====================== */
+
+.media-container {
+  width: 98%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.media-container {
+  padding: 5px;
+  text-align: center;
+}
+
+.media-container {
+  background: rgba(184,134,11,.3);
+  border-top: 6px solid #befafa;
+  border-right: 4px solid #80dfdf;
+  border-bottom: 6px solid #befafa;
+  border-left: 4px solid #80dfdf;
+  margin: 0 auto;
+}
+
+.media-container iframe,
+.media-container img {
+  width: 98%;
+  height: auto;
+  border: 4px solid #800096;
+}
+
+.media-container p {
+  color: #800096;
+}
+
+/* ===== Mobil/Base Audio Video ====================== */
+
+/* Rachel's answer. Feb 27, 2014. 
+https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/ 
+  use if redo embedded videos
+*/
+
+/* ===== Mobil/Base NAVIGATION ======================*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top: 3.25px solid cadetblue;
+  border-bottom: 3.25px solid #800096;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #befafa;
+  border-top: 4px solid #800096;
+  border-bottom: 4px solid #800096;
+}
+
+.universe .main-nav {
+  background-color: #80dfdf;
+  border-top: 3px solid #008080;
+  border-bottom: 3px solid #008080;
+}
+
+.thumbnailDiv {
+  /* display: inline-block; */
+  block-size: 50%;
+  /* border-radius: 75%; */
+  padding: 0px;
+  border: none;
+}
+
+.thumbnailDiv img {
+  display: inline-block;
+  border: none;
+  border-radius: 50%;
+  /* block-size: 50%; */
+  border-radius: 50%;
+  padding: 0px 4px 0px 4px;
+}
+
+.main-nav ul {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.dropbtn,
+.main-nav li {
+  display: inline-block;
+}
+
+#home {
+  font-family: 'srisakdi'; 
+  font-weight: bold;
+}
+
+.xs-menu,
+.dropbtn,
+.main-nav ul a {
+  /* order: 1; */
+  /* background-color: #befafa; */
+  /* font-weight: bold; */
+  display: inline-block;
+  padding: 4px 4px 8px;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
+  font-size: .9rem;
+  font-weight: bold;
+  text-align: center;
+  color: #C902AC;
+  /* text-decoration: none; */
+  /* border-bottom: 2px solid #039494; */
+  /* border-right: 2px solid teal; */
+  /* border-left: 2px solid #befafa; */
+}
+
+.dropbtn {
+  border: none;
+  text-decoration: underline #C902AC;
+  background: inherit;
+}
+
+.dropbtn:hover,
+.main-nav a:hover {
+  background-color: #20B2AA;
+  color: #FFE599;
+  text-decoration: none;
+}
+
+.universe .dropbtn:hover,
+.universe .main-nav a:hover {
+  color: #333399;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #800096;
+  /* text-decoration-color: #C902AC; */
+  /* color: #C902AC; */
+  /* #800096 */
+}
+
+/* a:focus, */
+
+/* .thumbnailDivA {
+  display: inline-block;
+  block-size: 80%;
+  font-size: 0em;
+  padding: 0px;
+} */
+
+/* .lg-menu, */
+#heading-img-right,
+#heading-img-left {
+  display: none;
+}
+
+
+/* ===== MOBILE/BASE section top Bumbers signs ====================================================== */
+.page-top {
+  padding-top: 0px;
+}
+
+.section-top {
+  /* padding-top: 50px; */
+}
+
+.swirl {
+  height: 15px;
+  background-image: linear-gradient(#befafa, #800096);
+  margin: 0 auto;
+}
+
+.top-note {
+  text-align: center;
+  background:#800096; 
+  padding: 8px 4px 4px;
+  margin:0;
+  color: #befafa;
+  font-family: 'srisakdi';
+  font-size: 1.2rem;
+  font-weight: bold;
+  }
+
+.top-note p {
+  margin: 0px;
+  padding-bottom: 10px;
+  padding-top: 4px;
+}  
+
+.finish {
+  height: 15px;
+  background-image: linear-gradient(#800096, #ffe599);
+  margin: 0px auto;
+}
+
+.small {
+  height: 7px;
+}
+
+.xsmall {
+  height: 3.5px;
+}
+
+.breathe .swirl {
+  background-image: linear-gradient(#ffe599, #800096);
+}
+
+.breathe .finish {
+  background-image: linear-gradient(#800096, #befafa);
+}
+
+.universe .top-note {
+  background: none;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 5px black, -1px -1px 5px black,  0 0 25px blue, 0 0 10px darkblue;
+  display: block;
+  margin: auto;
+  padding: 30px; 
+}
+
+.universe .top-note:first-child {
+  max-width: 572px;
+}
+
+.universe .top-note:last-child {
+  max-width: 300px;
+}
+
+/* ======================================================================
+=========================================================================
+                              MEDIA QUERIES
+=========================================================================
+=========================================================================*/
+
+/* ===================== MIN WIDTH 550px Styles ======================== */
+
+@media (min-width: 550px) {
+/* @media (min-width: 550px) and (min-height: 400px) { */
+
+  html {
+    font-size: 16px;
+  }
+
+  /* .indent {
+    width: 80%;
+    margin: 0 auto;
+  } */
+  
+  .xs-menu {
+    display: none;
+  }
+
+  .lg-menu {
+    display: inherit;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+
+  .main-nav {
+    background-image: linear-gradient(#FFE599, #befafa);
+    border-top: 3px solid #800096 ;
+    /* border-bottom: 3.25px solid cadetblue; */
+    /* border-top: 3.25px solid cadetblue; */
+    border-bottom: 3px solid #800096;
+    justify-content: center;
+
+  }
+
+  .universe .main-nav {
+    /* background: none; */
+    border: none;
+    background: rgba(0, 0, 32, .6);
+    /* border-top:  4px solid #008080; */
+    /* border-top: none; */
+    /* border-right: 5px solid #80dfdf; */
+    /* border-left:  5px solid #008080; */
+    /* border-bottom:  3px solid #80dfdf; */
+  }
+
+  .main-nav li {
+    /* margin: 0px auto; */
+    margin-right: 0px;
+    /* padding: 2px 4px; */
+    padding-top: 3px;
+  }
+
+  .thumbnailDiv {
+    /* padding: 2px 4px; */
+    margin: 0px 3px 0px 0px;
+    /* margin: 0px 6px 0px 2px */
+    /* align-content: center; */
+  }
+
+  .dropbtn,
+  .main-nav li a, 
+  .thumbnailDiv a {
+    /* order: 1; */
+    display: block;
+    background-color: #befafa;
+    border-radius: 10px;
+    border-bottom: 3px solid #039494;
+    border-right: 3px solid teal;
+    border-left: 4px solid #befafa;
+  }
+
+  .dropbtn,
+  .main-nav li a {
+    padding: 4px 8px 6px;
+    font-size: .9em;
+    /* font-weight: bold; */
+    /* text-align: center; */
+  }
+
+  .universe .dropbtn,
+  .universe .main-nav li a {
+    background-color: #80dfdf;
+  }
+
+
+
+  .thumbnailDiv a {
+    /* padding: 1px 1px;
+    margin: 1px; */
+    /* margin: auto; */
+  }
+
+  .thumbnailDiv img {
+    /* padding: 0px;
+    margin: 0px; */
+  }
+
+  .site-name {
+    font-size: 1.5rem;
+  } 
+
+} /* end media >= 550px */
+/* ======================================================================= */
+/*  MIN WIDTH 750px Styles       
+/* ======================================================================= */
+@media (min-width: 750px) {
+
+  html {
+    font-size: 18px;
+  }
+
+  .main-header {
+    position: fixed;
+    border-bottom: 4px solid cadetblue;
+    padding-top: 4px;
+    border-top: 4px solid cadetblue;
+  }
+
+/* ===== 750mode HEADING BACKGROUND YELLOW WITH BEFAFA LINEAR-GRADIENTS ============== */
+
+  .sunshine .main-header{
+      background: linear-gradient(#FFE599, #befafa),  linear-gradient(#FFE599, #FFE599);
+      background-position: bottom, top; 
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto 28px, cover;
+      background-color: none;
+  }
+
+/* ===== 750mode  HEADING BACKGROUND UNIVERSE ============== */
+
+  .universe .main-header {
+    background-image: url(../images/hubble-stock.jpg);
+    /* background: rgba(0, 0, 32, .6); */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 4px solid rgb(0, 0, 59);
+    /* border-bottom: 4px solid rgb(0, 0, 59); */
+    border-bottom: none;
+  }
+
+  .universe .main-header .breathe,
+  .universe .main-header .breathe .swirl,
+  .universe .main-header .breathe .finish {
+    display: block;
+  }
+
+  /* ===== 750mode  HEADING BACKGROUND BOTH ============== */
+
+  #heading-img-right,
+  #heading-img-left {
+    display: block;
+    border: none;
+    padding: none;
+    margin: none;
+    position: fixed;
+    top: 0px;
+  }
+
+  #heading-img-left {
+    width: 160px;
+    height: 160px; 
+    left: 0px;
+  }
+
+  #heading-img-right {
+    width: 80px;
+    height: 120px; 
+    right: 0px;
+  }
+
+  .site-name,
+  .byline {
+    display: block;
+    text-align: left;
+    margin: 0px;
+    /* padding-bottom: 10px; */
+    padding-left: 155px;
+  }
+
+  .site-name {
+    font-size: 2rem;
+    padding-top: 4px;
+  }
+
+  .byline {
+    font-size: 1rem;
+  }
+
+  .main-nav {
+    display: block;
+    text-align: right;
+    border: none;
+    padding-right: 65px;
+    position: bottom;
+    background: none;
+  }
+
+  .universe .main-nav {
+    background: none;
+  }
+
+/* Under */
+  .main-nav li {
+    margin-left: 18px;
+  }
+
+  .dropbtn,
+  .main-nav li a {
+    font-size: .8rem;
+  }
+  
+  .thumbnailDiv {
+    display: none;
+  }
+
+  .main-img {
+    display: none;
+  }
+
+  /* ===== 750 mode MAIN CONTENT ====================== */
+ 
+  .page-top {
+      padding-top: 120px;
+    }
+
+  .universe .page-top {
+    padding-top: 150px;
+  }  
+    
+  .universe .top-note:first-child {
+    max-width: 600px;
+  }
+  
+  .universe .top-note:last-child {
+    max-width: 300px;
+  }
+
+  .universe .swirl,
+  .universe .finish {
+    display: none;
+  }
+
+  /* ===== 750 mode MAIN CONTENT ===== */
+
+  /* ===== .sunshine POKEWEE SECTION BEGINNING ===== */
+
+
+  .indent {
+    max-width: 711px;
+    margin: auto;
+  }
+
+  div .section-text{
+    /* display: inline-block;
+    float: left;
+    width: 50%; */
+    /* text-align: center; */
+  }
+
+  .pokeweed .section-image:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    z-index: -1;
+  }
+
+  .section-text {
+    background-color: rgba(255, 229, 153, .9);
+    padding: 10px;
+    border: 3px solid #800096;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  /* .section-text-2 p {
+    position: relative;
+    top: 180;
+    left: 20;
+    width: 233px; 
+  } */
+
+
+  .inset-embellish {
+    width: 50%;
+    margin: 0 auto;
+    background: #befafa
+
+  }
+
+  .section-text {
+    /* background: #ffe599;
+    border: #800096; */
+  }
+
+/* ===== POKEWEED SECTION END ===== */
+
+  #love {
+    display: relative;    
+  }
+
+  #Mom {
+
+  }
+
+  .footer-buffer {
+    width: 100%;
+    height: 74px;
+  }
+
+  .universe footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #80dfdf;
+  }
+
+  .universe footer p {
+    width: 90%;
+    margin: 7px auto;
+    border-top: 4px solid #008080;   
+    border-right: 4px solid #befafa;
+    border-bottom: 4px solid #befafa;
+    border-left: 4px solid #008080;   
+    /* color: #ffe599;
+    text-shadow: 1px 1px 0 #C902AC; */
+    color: #befafa;
+    /* text-shadow: 2px 2px 0 #008080, -1px -1px 0 #008080; */
+  }
+  
+
+
+
+  /* The background image isn't working as planned, 
+  but I like what it is doing okay.  */
+  /* It just doesn't seem to be doing any of the stuff below */
+
+} /* end media >= 750px */
+ 
+/* ================================================================= */
+/*  MIN WIDTH 1065px Styles           (LAPTOPS DESKTOPS EXTRA LARGE) */
+/* ================================================================= */
+
+@media (min-width: 1065px) {
+
+  html {
+    font-size: 22px;
+  }
+
+  .indent {
+    max-width: 870px;
+  }
+
+} /* end media >= 1065px */
+
+/*===================================================================
+  --- Clearfix ---
+=====================================================================*/
+
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
