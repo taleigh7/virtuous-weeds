@@ -101,15 +101,6 @@ html {
   MOBILE/Base Styles
 ========================================================== */
 
-.test {
-color: #20B2AA
-}
-
-.dropdown-content,
-.main-nav {
-  transform: translateZ(20rem);
-}
-
 /* ===== MOBILE/Base  GENERAL BODY ====================== */
 
 body{
@@ -345,9 +336,6 @@ footer {
   cursor: pointer;
 }
 
-.universe footer p:hover {
-  /* transform:  */
-}
 
 /* ===== MOBILE/BASE  3D CARDS, Media-Containers ====================== */
 
@@ -448,9 +436,7 @@ https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-respons
 .xs-menu,
 .dropbtn,
 .main-nav ul a {
-  /* order: 1; */
-  /* background-color: #befafa; */
-  /* font-weight: bold; */
+
   display: inline-block;
   padding: 4px 4px 8px;
   border-radius: 10px;
@@ -459,10 +445,6 @@ https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-respons
   font-weight: bold;
   text-align: center;
   color: #C902AC;
-  /* text-decoration: none; */
-  /* border-bottom: 2px solid #039494; */
-  /* border-right: 2px solid teal; */
-  /* border-left: 2px solid #befafa; */
 }
 
 .dropbtn {
@@ -492,29 +474,15 @@ a:visited {
   /* #800096 */
 }
 
-/* a:focus, */
-
-/* .thumbnailDivA {
-  display: inline-block;
-  block-size: 80%;
-  font-size: 0em;
-  padding: 0px;
-} */
-
 /* .lg-menu, */
 #heading-img-right,
 #heading-img-left {
   display: none;
 }
 
-
 /* ===== MOBILE/BASE section top Bumbers signs ====================================================== */
 .page-top {
   padding-top: 0px;
-}
-
-.section-top {
-  /* padding-top: 50px; */
 }
 
 .swirl {
@@ -594,11 +562,6 @@ a:visited {
     font-size: 16px;
   }
 
-  /* .indent {
-    width: 80%;
-    margin: 0 auto;
-  } */
-  
   .xs-menu {
     display: none;
   }
@@ -611,7 +574,6 @@ a:visited {
     display: inline-block;
   }
 
-
   .main-nav {
     background-image: linear-gradient(#FFE599, #befafa);
     border-top: 3px solid #800096 ;
@@ -619,7 +581,6 @@ a:visited {
     /* border-top: 3.25px solid cadetblue; */
     border-bottom: 3px solid #800096;
     justify-content: center;
-
   }
 
   .universe .main-nav {
@@ -670,19 +631,6 @@ a:visited {
   .universe .dropbtn,
   .universe .main-nav li a {
     background-color: #80dfdf;
-  }
-
-
-
-  .thumbnailDiv a {
-    /* padding: 1px 1px;
-    margin: 1px; */
-    /* margin: auto; */
-  }
-
-  .thumbnailDiv img {
-    /* padding: 0px;
-    margin: 0px; */
   }
 
   .site-name {
@@ -835,17 +783,9 @@ a:visited {
 
   /* ===== .sunshine POKEWEE SECTION BEGINNING ===== */
 
-
   .indent {
     max-width: 711px;
     margin: auto;
-  }
-
-  div .section-text{
-    /* display: inline-block;
-    float: left;
-    width: 50%; */
-    /* text-align: center; */
   }
 
   .pokeweed .section-image:first-child {
@@ -863,34 +803,16 @@ a:visited {
     margin: 20px;
   }
 
-  /* .section-text-2 p {
-    position: relative;
-    top: 180;
-    left: 20;
-    width: 233px; 
-  } */
-
-
   .inset-embellish {
     width: 50%;
     margin: 0 auto;
-    background: #befafa
-
-  }
-
-  .section-text {
-    /* background: #ffe599;
-    border: #800096; */
+    background: #befafa;
   }
 
 /* ===== POKEWEED SECTION END ===== */
 
   #love {
     display: relative;    
-  }
-
-  #Mom {
-
   }
 
   .footer-buffer {
@@ -912,18 +834,8 @@ a:visited {
     border-right: 4px solid #befafa;
     border-bottom: 4px solid #befafa;
     border-left: 4px solid #008080;   
-    /* color: #ffe599;
-    text-shadow: 1px 1px 0 #C902AC; */
     color: #befafa;
-    /* text-shadow: 2px 2px 0 #008080, -1px -1px 0 #008080; */
-  }
-  
-
-
-
-  /* The background image isn't working as planned, 
-  but I like what it is doing okay.  */
-  /* It just doesn't seem to be doing any of the stuff below */
+  } 
 
 } /* end media >= 750px */
  
@@ -935,6 +847,19 @@ a:visited {
 
   html {
     font-size: 22px;
+  }
+
+  .site-name {
+    font-size: 36px
+  }
+
+  .byline {
+    font-size: 16px
+  }
+
+  .dropbtn,
+  .main-nav li a {
+    font-size: 13px
   }
 
   .indent {
