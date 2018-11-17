@@ -1,8 +1,6 @@
 /*--======================================================
------ VIRTUOUS WEEDS -----
-    Style.css stylesheet
+----- VIRTUOUS WEEDS - style.css stylesheet
 ==========================================================*/
-
 
 /* =========================================================
   Global Styles
@@ -125,14 +123,7 @@ body{
   font-weight: 400;
 }
 
-
-
 /* ===== MOBILE/Base HEADER  ====================== */
-
-/* .under-construction h1 {
-  padding: 20px 20px;
-  margin: 20px 20px;
-} */
 
 .main-header {
   width: 100%;
@@ -289,8 +280,6 @@ em,
   font-size: 1rem;
   color: white;
   text-shadow: 1px 1px 5px black, -1px -1px 5px black,  0 0 25px blue, 0 0 10px darkblue;
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-  /* text-shadow: -2px 0 #000059, 0 2px #000059, 2px 0 #000059, 0 -2px #000059; */
 }
 
 ol {
@@ -854,12 +843,12 @@ a:visited {
   }
 
   .byline {
-    font-size: 16px
+    font-size: 18px
   }
 
   .dropbtn,
   .main-nav li a {
-    font-size: 13px
+    font-size: 14px
   }
 
   .indent {
