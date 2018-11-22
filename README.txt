@@ -39,7 +39,6 @@ I have created three css files.
 ====================================
 ## Custom JavaScript Functions =====
 ====================================
-
 The javascript function I created is: 
 
 1. checkNavPos()
@@ -62,9 +61,11 @@ Note: I'm seeing that had not yet added the variable to track sticky state back 
   This will serve as the main project page at this point. This is also the page with the 3d cards at bottom.
 
 
-======================================================================================================================
 
-(First upload)
+====================================================================================
+
+First upload notes:
+====================================================================================
 
 Okay. Here's the deal. 
 I was just cleaning up the pages, lining things up and such, when things stopped working.
