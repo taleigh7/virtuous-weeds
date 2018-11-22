@@ -6,17 +6,27 @@
 // Declare variable for sticky navigation bar in <750px mode.
 var navbar = document.getElementById("navigation");
 var navbarClassList = navbar.classList;
+var isSticky = "no";
 
 function checkNavPos() {
   if (window.innerWidth < 750) {
-    if (window.pageYOffset >= 62) { 
-      navbarClassList.add("sticky");
+    if (window.pageYOffset >= 62) {
+      if (isSticky = "no") {
+        navbarClassList.add("sticky");
+        isSticky = "yes"
+      } 
     } else {
-      navbarClassList.remove("sticky");
-    } 
+        if (isSticky = "yes") {
+          navbarClassList.remove("sticky");
+          isSticky = "no"
+        }
+      }
   } else {
-    navbarClassList.remove('sticky');
+    if (isSticky = "yes") {
+      navbarClassList.remove("sticky");
+      isSticky = "no"      
     }
+  }
 }
 
 window.onscroll = function() {checkNavPos()};

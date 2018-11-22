@@ -127,7 +127,6 @@ body{
 
 .main-header {
   width: 100%;
-  /* transform: translateZ(8rem); */
 }
 
 .sunshine .main-header {
@@ -161,7 +160,7 @@ body{
   font-family: 'srisakdi'; 
   text-align: center;
   margin: 5px 0px 0px;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -172,7 +171,7 @@ body{
 .byline {
   text-align: center;
   margin: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   font-family: 'Mali';
   font-size: 1rem;
   font-weight: 500;
@@ -240,11 +239,7 @@ img {
 
 
 .indent img {
-  /* display: block; */
-  /* width: 100%;
-  height: auto; */
   margin: 1% 3px;
-  /* background: #befafa; */
   padding: 1px;
   border: 4px solid #800096
 }
@@ -275,7 +270,7 @@ em,
   font-style: italic;
 }
 
-.universe .content {
+.universe .main-content {
   padding-bottom: 16px;
   font-size: 1rem;
   color: white;
@@ -326,7 +321,7 @@ footer {
 }
 
 
-/* ===== MOBILE/BASE  3D CARDS, Media-Containers ====================== */
+/* ===== MOBILE/BASE Media-Containers ====================== */
 
 .media-container {
   width: 98%;
@@ -372,8 +367,6 @@ https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-respons
   position: fixed;
   top: 0;
   width: 100%;
-  border-top: 3.25px solid cadetblue;
-  border-bottom: 3.25px solid #800096;
 }
 
 .main-nav {
@@ -391,9 +384,7 @@ https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-respons
 }
 
 .thumbnailDiv {
-  /* display: inline-block; */
   block-size: 50%;
-  /* border-radius: 75%; */
   padding: 0px;
   border: none;
 }
@@ -401,8 +392,6 @@ https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-respons
 .thumbnailDiv img {
   display: inline-block;
   border: none;
-  border-radius: 50%;
-  /* block-size: 50%; */
   border-radius: 50%;
   padding: 0px 4px 0px 4px;
 }
@@ -456,13 +445,6 @@ https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-respons
   text-decoration: none;
 }
 
-a:visited {
-  color: #800096;
-  /* text-decoration-color: #C902AC; */
-  /* color: #C902AC; */
-  /* #800096 */
-}
-
 /* .lg-menu, */
 #heading-img-right,
 #heading-img-left {
@@ -470,12 +452,9 @@ a:visited {
 }
 
 /* ===== MOBILE/BASE section top Bumbers signs ====================================================== */
-.page-top {
-  padding-top: 0px;
-}
 
 .swirl {
-  height: 15px;
+  height: 30px;
   background-image: linear-gradient(#befafa, #800096);
   margin: 0 auto;
 }
@@ -498,9 +477,13 @@ a:visited {
 }  
 
 .finish {
-  height: 15px;
+  height: 30px;
   background-image: linear-gradient(#800096, #ffe599);
   margin: 0px auto;
+}
+
+.medium {
+  height: 15px;
 }
 
 .small {
@@ -551,6 +534,11 @@ a:visited {
     font-size: 16px;
   }
 
+  .byline {
+    margin: 3px;
+    padding-bottom: 5px;
+  }
+
   .xs-menu {
     display: none;
   }
@@ -566,21 +554,13 @@ a:visited {
   .main-nav {
     background-image: linear-gradient(#FFE599, #befafa);
     border-top: 3px solid #800096 ;
-    /* border-bottom: 3.25px solid cadetblue; */
-    /* border-top: 3.25px solid cadetblue; */
     border-bottom: 3px solid #800096;
     justify-content: center;
   }
 
   .universe .main-nav {
-    /* background: none; */
     border: none;
     background: rgba(0, 0, 32, .6);
-    /* border-top:  4px solid #008080; */
-    /* border-top: none; */
-    /* border-right: 5px solid #80dfdf; */
-    /* border-left:  5px solid #008080; */
-    /* border-bottom:  3px solid #80dfdf; */
   }
 
   .main-nav li {
@@ -613,8 +593,6 @@ a:visited {
   .main-nav li a {
     padding: 4px 8px 6px;
     font-size: .9em;
-    /* font-weight: bold; */
-    /* text-align: center; */
   }
 
   .universe .dropbtn,
@@ -622,11 +600,8 @@ a:visited {
     background-color: #80dfdf;
   }
 
-  .site-name {
-    font-size: 1.5rem;
-  } 
-
 } /* end media >= 550px */
+
 /* ======================================================================= */
 /*  MIN WIDTH 750px Styles       
 /* ======================================================================= */
@@ -707,7 +682,7 @@ a:visited {
 
   .site-name {
     font-size: 2rem;
-    padding-top: 4px;
+    padding-top: 3px;
   }
 
   .byline {
@@ -748,7 +723,7 @@ a:visited {
   /* ===== 750 mode MAIN CONTENT ====================== */
  
   .page-top {
-      padding-top: 120px;
+      padding-top: 118px;
     }
 
   .universe .page-top {
@@ -763,21 +738,13 @@ a:visited {
     max-width: 300px;
   }
 
-  .universe .swirl,
-  .universe .finish {
-    display: none;
-  }
-
-  /* ===== 750 mode MAIN CONTENT ===== */
-
-  /* ===== .sunshine POKEWEE SECTION BEGINNING ===== */
-
   .indent {
     max-width: 711px;
     margin: auto;
   }
 
-  .pokeweed .section-image:first-child {
+  /* position sticky was working but it isn't working anymore. Do this in js */
+  .section-image img:first-child {
     position: -webkit-sticky;
     position: sticky;
     top: 120px;
@@ -797,8 +764,6 @@ a:visited {
     margin: 0 auto;
     background: #befafa;
   }
-
-/* ===== POKEWEED SECTION END ===== */
 
   #love {
     display: relative;    
@@ -826,6 +791,11 @@ a:visited {
     color: #befafa;
   } 
 
+  .universe footer .swirl,
+  .universe footer .finish {
+    display: none;
+  }
+
 } /* end media >= 750px */
  
 /* ================================================================= */
@@ -834,27 +804,8 @@ a:visited {
 
 @media (min-width: 1065px) {
 
-  html {
-    font-size: 22px;
-  }
 
-  .site-name {
-    font-size: 36px
-  }
-
-  .byline {
-    font-size: 18px
-  }
-
-  .dropbtn,
-  .main-nav li a {
-    font-size: 14px
-  }
-
-  .indent {
-    max-width: 870px;
-  }
-
+  
 } /* end media >= 1065px */
 
 /*===================================================================
